@@ -1,0 +1,45 @@
+/* COLLECTION SECTION CSS START HERE  */
+
+ 
+.collection h4 {
+    color: #b88b31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+/* Desktop: 4 images */
+.collection-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 15px 0 15px;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+.collection-img img {
+    height: 215px;
+    width: 100%;
+    display: block;
+    object-fit: fill;
+    border-radius: 6px;
+}
+
+/* Tablet: 2 images ek line mein */
+@media (max-width: 955px) {
+    .collection-img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: 1 image ek line mein */
+@media (max-width: 576px) {
+    .collection-img {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* COLLECTION SECTION CSS END HERE  */
